@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- side bar -->
+    <div class="sidebar">
+        <!-- Logo -->
+        <h1 class="logo">SattvaRuchi</h1>
+        <!-- list of menus -->
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <!-- <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a> -->
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
+            <a href="#contactus"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a>
+            <!-- <a href="#"><ion-icon name="settings-outline"></ion-icon>Setting</a> -->
+        </div>
+        <!-- Logout -->
+        <div class="sidebar-logout">
+            <a href="signup.html"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+        </div>
+    </div>
+    <!-- main bar -->
+
+    <div class="main">
+        <div class="main-navbar">
+
+
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+
+            <div class="search">
+                <input type="text" placeholder="What you want to eat?">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="profile">
+                <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a class="user" href="signup.html"><ion-icon name="person-outline"></ion-icon> </a>
+            </div>
+        </div>
+
+        <div class="main-highlight">
+
+            <div class="main-header">
+                <h2 class="main-title">Recommendations</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img class="highlight-img" src="fresh salad.jpg">
+                    <div class="highlight-desc">
+                        <h4>Fresh Salad</h4>
+                        <p>349/-</p>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <img class="highlight-img" src="caffe latte.jpg">
+                    <div class="highlight-desc">
+                        <h4>Cafe Latte</h4>
+                        <p>149/-</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="french fries.jpg">
+                    <div class="highlight-desc">
+                        <h4>Premium Steak</h4>
+                        <p>349/-</p>
+                    </div>
+                </div>
+                
+
+                <div class="highlight-card">
+                    <img class="highlight-img" src="momos.jpg">
+                    <div class="highlight-desc">
+                        <h4>Momos</h4>
+                        <p>149/-</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-menus">
+            <div class="main-filter">
+                <div>
+                    <h2 class="main-title">Menu <br>Category</h2>
+                    <div class="main-arrow">
+                        <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                        <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                        </div>
+                        <p>All Menus</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                        </div>
+                        <p>Burger</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="pizza-outline"></ion-icon>
+                        </div>
+                        <p>Pizza</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="wine-outline"></ion-icon>
+                        </div>
+                        <p>Wine</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                        </div>
+                        <p>Ice Cream</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <p>Coffee</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fish-outline"></ion-icon>
+                        </div>
+                        <p>Seafood</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="nutrition-outline"></ion-icon>
+                        </div>
+                        <p>Healthy</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <hr class="divider">
+
+
+
+            <div class="main-detail">
+                <h2 class="main-title"> Choose Order</h2>
+                <div class="detail-wrapper">
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="caffe latte.jpg"
+                            alt="seafood image">
+
+
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Caffe latte</h4>
+                                <p class="detail-sub">Sip into serenity with our exquisite Caffè Latte</p>
+                                <p class="price">249/-</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('Caffe Latte', 249)">Add to Cart</button>
+                            </div>
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="burger.jpg" alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Burger</h4>
+                                <p class="detail-sub">Unleash your taste buds with our sensational burgers</p>
+                                <p class="price">349/-</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('Burger', 349)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+
+                    </div>
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="pizza.jpg" alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Pizza</h4>
+                                <p class="detail-sub">Experience a slice of heaven with our mouthwatering pizzas</p>
+                                <p class="price">319/-</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('pizza', 319)">Add to Cart</button>
+                            </div>
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="Biryani.jpg" alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Biryani</h4>
+                                <p class="detail-sub">Embark on a culinary adventure with our aromatic Biryani</p>
+                                <p class="price">549/-</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('Biryani', 549)">Add to Cart</button>
+                            </div>
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="ice cream.jpg"
+                            alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Ice Cream</h4>
+                                <p class="detail-sub">Chill out and treat your senses with our decadent ice creams</p>
+                                <p class="price">179/-</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('Ice Cream', 179)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="fresh salad.jpg"
+                            alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Fresh Salad</h4>
+                                <p class="detail-sub">Revitalize your taste buds with our Fresh Salad</p>
+                                <p class="price">389/-</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('Fresh Salad', 389)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="shrime.jpg" alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Shrime</h4>
+                                <p class="detail-sub">Savor the ocean's bounty with our tantalizing Shrimp Soup</p>
+                                <p class="price">559/-</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('Shrime', 559)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="momos.jpg"
+                            alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Momos</h4>
+                                <p class="detail-sub">
+                                    Delicious steamed dumplings with flavorful fillings, momos are a popular Asian street food.</p>
+                                <p class="price">149/-</p>
+                                <button class="add-to-cart-btn"  onclick="addToCart('Momos', 149)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="noodles.jpg"
+                            alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Noodles</h4>
+                                <p class="detail-sub"> Slurp-worthy strands of perfectly cooked noodles.</p>
+                                <p class="price">199/-</p>
+                                <button class="add-to-cart-btn"  onclick="addToCart('Noodles', 119)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="french fries.jpg"
+                            alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>French Fries with Fish</h4>
+                                <p class="detail-sub">Dive into a crispy and savory delight with our Fish and French
+                                    Fries</p>
+                                <p class="price">549/-</p>
+                                <button class="add-to-cart-btn"  onclick="addToCart('French Fries with Fish', 549)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="dosa.jpg"
+                            alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Masala Dosa</h4>
+                                <p class="detail-sub">
+                                    Spiced potato-filled crispy dosa, a South Indian favorite.</p>
+                                <p class="price">75/-/-</p>
+                                <button class="add-to-cart-btn"  onclick="addToCart('Masala Dosa', 75)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="idlisambar.jpg"
+                            alt="seafood image">
+                        <div class="detail-desc">
+
+                            <div class="detail-name">
+                                <h4>Idli Sambar</h4>
+                                <p class="detail-sub">Steamed rice cakes paired with lentil-based sambhar, a South Indian favorite.</p>
+                                <p class="price">75/-</p>
+                                <button class="add-to-cart-btn"  onclick="addToCart('Idli Sambar', 75)">Add to Cart</button>
+                            </div>
+
+
+                            <ion-icon class="deatil-favourites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- This part is outside detail wrapper -->
+                
+            <div> <button class="order-btn" onclick="placeOrder()">Place Order</button> </div>
+                <!-- Below div is main details -->
+            </div> 
+
+
+           
+            
+        </div>
+
+        <div id="lastline"><hr></div>
+        <div id="lastarrange">
+        <section class="footer">
+            <section id="last">
+
+            <div class="box-container">
+        
+        
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#" class="lasta">Home</a>
+                    <a href="#" class="lasta">Dishes</a>
+                    
+                    <a href="#" class="lasta">Menu</a>
+                    
+                    <a href="#" class="lasta">Order</a>
+                </div>
+        
+                <div class="box" id="contactus">
+                    
+                    <h3>Contact Info</h3>
+                    <a href="#" class="lasta">+91-8919296597</a>
+                    <a href="#" class="lasta">saiprashanth751@gmail.com</a>
+                    <a href="#" class="lasta">info.sattvaruchi@gmail.com</a>
+                    <a href="#" class="lasta">Jalandhar, India - 144411</a>
+                </div>
+        
+                <!-- <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">instagram</a>
+                    <a href="#">linkedin</a>
+                </div> -->
+        
+            </div>
+        
+            <div class="credit"> copyright @ 2023 by <span>Sai Prashanth SattvaRuchi </span> </div>
+        </section>
+        </section>
+        </div>
+    </div>
+    
+
+
+
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="app.js"></script>
+<script>
+
+</script>
+
+</html>
